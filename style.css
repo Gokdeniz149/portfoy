@@ -1,3 +1,4 @@
+
 h1 {
   text-align: center;
 }
@@ -13,10 +14,14 @@ body {
   color: #333;
 }
 nav {
-  background-color: #333;
-  color: white;
-  padding: 10px;
-  text-align: center;
+  position: sticky; /* ya da fixed */
+  top: 0;           /* en üstte sabitle */
+  background-color: #1E1E2F;
+  color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: right;
+  padding: 0,1% 0;
+  z-index: 100;     /* diğer içeriklerin üstünde */
 }
 a {
   color: blue;
@@ -53,6 +58,10 @@ button {
   border: none;
   padding: 10px 20px;
   cursor: pointer;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background-color 0.3s;
+    margin: 10px;
 }
 button:hover {
   background-color: #45a049;
